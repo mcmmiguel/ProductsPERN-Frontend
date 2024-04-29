@@ -1,4 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { getProducts } from "../services/productService";
+
+export async function loader() {
+    const products = await getProducts();
+    console.log(products);
+    return {}
+}
 
 export const Products = () => {
     return (
