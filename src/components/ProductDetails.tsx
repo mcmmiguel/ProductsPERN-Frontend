@@ -21,7 +21,9 @@ export const ProductDetails = ({ product }: ProductDetailProps) => {
                 {isAvailable ? 'Disponible' : 'No disponible'}
             </td>
             <td className="p-3 text-lg text-gray-800 ">
-
+                <div className="flex gap-2 items-center">
+                    <button>Editar</button>
+                </div>
             </td>
         </tr>
     )
