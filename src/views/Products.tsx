@@ -11,7 +11,6 @@ export async function loader() {
 export const Products = () => {
 
     const products = useLoaderData() as Product[];
-    console.log(products);
 
     return (
         <>
